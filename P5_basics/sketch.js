@@ -50,12 +50,7 @@ function draw(){
 	noStroke();
 	fill(255,255,255);
 	circle(300,400,150);
-	
-	//This resets the stroke color to black and the weight to 1. 
-	//this wsas done because otherwise as the draw loop continues the same stroke and strokeWeight will persists untill overwritten
-	stroke(0,0,0);
-	strokeWeight(1);
-	
+		
 	//once  a property is changed it keeps the changed value untill it is changed again
 	//we can fix this issue by using push() and pop() functions as shown below
 	
@@ -75,9 +70,10 @@ function draw(){
 	// ie point(x,y)
 	strokeWeight(10);
 	point(300,40)
-
-
+	
+	
+	//This resets the stroke color to black and the weight to 1. 
+	//this wsas done because otherwise as the draw loop continues the same stroke and strokeWeight will persists untill overwritten
+	stroke(0,0,0);
 	strokeWeight(1);
-	
-	
 }

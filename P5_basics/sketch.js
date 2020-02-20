@@ -68,12 +68,20 @@ function draw(){
 	
 	//Points can be drawn using the point() function
 	// ie point(x,y)
+	stroke(0,0,0)
 	strokeWeight(10);
-	point(300,40)
-	
+	point(300,40);
+	point(300,90);
+
+	//lines can be drawn using the line function
+	// line(x1,y1,x2,y2) in 2D we can add z1 , z2 in 3D ie WEBGL mode ---> line(x1,y1,z1,x2,y2,z2)
+	strokeWeight(2);
+	stroke('white');
+	line(300,40,300,90);
+	line(300,40,250,90);	
 	
 	//This resets the stroke color to black and the weight to 1. 
-	//this wsas done because otherwise as the draw loop continues the same stroke and strokeWeight will persists untill overwritten
+	//this was done because otherwise as the draw loop continues the same stroke and strokeWeight will persists untill overwritten
 	stroke(0,0,0);
 	strokeWeight(1);
 }
